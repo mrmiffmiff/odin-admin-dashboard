@@ -11,6 +11,29 @@
     grid-column: 2/3;
     background-color: white;
     box-shadow: grey 0 10px 5px;
+    display: grid;
+    grid-template-areas: "search search search profile profile"
+        "welcome welcome . button button";
+}
+
+.search {
+    border: solid red 5px;
+    grid-area: search;
+}
+
+.profile {
+    border: solid blue 5px;
+    grid-area: profile;
+}
+
+.welcome {
+    border: solid green 5px;
+    grid-area: welcome;
+}
+
+.buttons {
+    border: solid purple 5px;
+    grid-area: button;
 }
 
 .sidebar {
