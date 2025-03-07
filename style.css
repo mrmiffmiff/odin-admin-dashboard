@@ -12,13 +12,33 @@
     background-color: white;
     box-shadow: grey 0 10px 5px;
     display: grid;
-    grid-template-areas: "search search search profile profile"
-        "welcome welcome . button button";
+    grid-template-areas: "search search search . profile profile"
+        "welcome welcome . . button button";
 }
 
 .search {
     border: solid red 5px;
     grid-area: search;
+    display: grid;
+    align-items: center;
+}
+
+#searchForm {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    align-items: center;
+    padding: 0 30px;
+}
+
+#searchIcon {
+    height: 2em;
+}
+
+.searchBar {
+    background-color: #e1e8f0;
+    border: 1px solid #e1e8f0;
+    border-radius: 15px;
+    line-height: 1.5em;
 }
 
 .profile {
