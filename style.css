@@ -16,8 +16,11 @@
         "welcome welcome . . button button";
 }
 
+.header .icon {
+    height: 2em;
+}
+
 .search {
-    border: solid red 5px;
     grid-area: search;
     display: grid;
     align-items: center;
@@ -30,10 +33,6 @@
     padding: 0 30px;
 }
 
-#searchIcon {
-    height: 2em;
-}
-
 .searchBar {
     background-color: #e1e8f0;
     border: 1px solid #e1e8f0;
@@ -44,6 +43,22 @@
 .profile {
     border: solid blue 5px;
     grid-area: profile;
+    display: grid;
+    grid-template-columns: 80px 120px 1fr;
+    align-items: center;
+    justify-items: center;
+    padding-left: 4em;
+}
+
+#profPic {
+    height: 2.5em;
+}
+
+#profName {
+    justify-self: start;
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .welcome {
