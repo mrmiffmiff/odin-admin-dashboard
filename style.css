@@ -187,4 +187,42 @@ p {
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: #e1e8f0;
+    display: grid;
+    grid-template-columns: 1fr 270px;
+}
+
+.main h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.projects {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.cardsArea {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.card {
+    border-left: solid #f2b32a 10px;
+    border-radius: 10px;
+    height: 200px;
+    background-color: white;
+    padding-left: 1em;
+}
+
+.card h4 {
+    font-weight: bolder;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 1.1em;
+}
+
+.card p {
+    color: #717171;
+    font-size: 0.9em;
 }
